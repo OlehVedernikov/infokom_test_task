@@ -10,3 +10,6 @@ Infokom LTD Test Task
 4. Выводить количество распознанных людей в реальном времени.
 
 *Для распознавания рекомендуется использовать TensorFlow
+
+Дизайн приложения:
+[!Дизайн приложения](https://github.com/OlehVedernikov/infokom_test_task/raw/master/images/app_ui.jpg)
