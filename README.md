@@ -12,4 +12,5 @@ Infokom LTD Test Task
 *Для распознавания рекомендуется использовать TensorFlow
 
 Дизайн приложения:
-[!Дизайн приложения](https://github.com/OlehVedernikov/infokom_test_task/raw/master/images/app_ui.jpg)
+
+![Дизайн приложения](images/app_ui.jpg)
