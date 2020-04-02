@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="margin_s">8dp</dimen>
+    <dimen name="margin_m">12dp</dimen>
+    <dimen name="margin_l">16dp</dimen>
+    <dimen name="margin_xl">24dp</dimen>
+
+    <dimen name="textSize_m">20sp</dimen>
+
+    <dimen name="button_radius">4dp</dimen>
+    <dimen name="stroke_width">2dp</dimen>
+</resources>

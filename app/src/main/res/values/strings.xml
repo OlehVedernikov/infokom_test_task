@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">InfokomTest</string>
+
+    <string name="permission_external_storage_rationale">This app needs the permission \"%1$s\"</string>
+    <string name="permission_camera_rationale">This app needs the permission \"%1$s\"</string>
+    <string name="permission_external_storage_denied_restrictions">This app will not save any data without the permission \"%1$s\"</string>
+    <string name="permission_camera_rationale_denied_restrictions">This app will not use a camera without the permission \"%1$s\"</string>
+
+    <string name="but_camera_back">Back camera</string>
+    <string name="but_camera_front">Front camera</string>
+    <string name="but_grant">Grant</string>
+    <string name="but_start_detection">Start detection</string>
+    <string name="but_stop_detection">Stop detection</string>
+
+    <string name="detected_people_label">Detected people</string>
+
+    <string name="back_camera_label">Back camera</string>
+    <string name="front_camera_label">Front camera</string>
+
+</resources>

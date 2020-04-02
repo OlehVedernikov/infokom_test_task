@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/margin_s"
+    android:background="@color/bgActivity"
+    tools:ignore="RtlSymmetry">
+
+    <FrameLayout
+        android:id="@+id/camera_preview_container"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:padding="@dimen/stroke_width"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintDimensionRatio="1:1">
+
+        <androidx.camera.view.PreviewView
+            android:id="@+id/camera_preview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <ua.ia.test_vedernikov.ui.main.DetectionResultOverlayView
+            android:id="@+id/detection_result"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+    </FrameLayout>
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/bg_frame_transparent"
+        app:layout_constraintTop_toTopOf="@id/camera_preview_container"
+        app:layout_constraintBottom_toBottomOf="@id/camera_preview_container"
+        app:layout_constraintStart_toStartOf="@id/camera_preview_container"
+        app:layout_constraintEnd_toEndOf="@id/camera_preview_container"
+        />
+
+<!--    <FrameLayout-->
+<!--        android:id="@+id/sp_cameras_container"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="@dimen/margin_m"-->
+<!--        android:padding="@dimen/button_radius"-->
+<!--        app:layout_constraintTop_toBottomOf="@id/camera_preview_container"-->
+<!--        >-->
+
+
+<!--    </FrameLayout>-->
+    <Spinner
+        android:id="@+id/sp_cameras"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_m"
+        android:background="@android:color/transparent"
+        app:layout_constraintTop_toBottomOf="@id/camera_preview_container"
+        />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/but_toggle_detection"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_m"
+        android:padding="@dimen/margin_m"
+        android:background="@drawable/bg_clickable"
+        android:gravity="center"
+        android:textSize="@dimen/textSize_m"
+        android:textColor="@color/textColorBlack"
+        android:clickable="true"
+        android:focusable="true"
+        app:layout_constraintTop_toBottomOf="@id/sp_cameras"
+        />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/detected_people_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_l"
+        android:padding="@dimen/margin_m"
+        android:gravity="center"
+        android:textSize="@dimen/textSize_m"
+        android:text="@string/detected_people_label"
+        android:textColor="@color/textColorDark"
+        app:layout_constraintTop_toBottomOf="@id/but_toggle_detection"
+        />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/detected_people_value"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:textColor="@color/colorAccent"
+        app:autoSizeTextType="uniform"
+        app:layout_constraintTop_toBottomOf="@id/detected_people_label"
+        app:layout_constraintBottom_toBottomOf="parent"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

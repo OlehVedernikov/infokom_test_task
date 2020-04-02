@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#f26b02</color>
+    <color name="colorPrimaryDark">#f26b02</color>
+    <color name="colorAccent">#f26b02</color>
+    <color name="colorAccent_alpha50">#7ff26b02</color>
+
+    <color name="colorGreyInfokom">#1a1a1a</color>
+
+    <color name="textColorLight">#e8e8e8</color>
+    <color name="textColorDark">#4d4d4d</color>
+    <color name="textColorBlack">#000000</color>
+
+    <color name="bgActivity">#000000</color>
+</resources>

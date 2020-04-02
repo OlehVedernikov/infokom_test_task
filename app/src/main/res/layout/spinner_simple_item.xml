@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.AppCompatTextView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@android:id/text1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/margin_m"
+    android:lines="1"
+    android:singleLine="true"
+    android:ellipsize="end"
+    android:textAlignment="inherit"
+    android:textSize="@dimen/textSize_m"
+    android:textColor="@color/textColorLight"
+    app:drawableEndCompat="@drawable/triangle"
+    android:background="@drawable/bg_frame_grey"
+    />
